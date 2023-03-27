@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnet-skaffold
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dotnet-skaffold
+  template:
+    metadata:
+      labels:
+        app: dotnet-skaffold
+    spec:
+      containers:
+      - name: dotnet-skaffold
+        image: dotnet-skaffold
+        ports:
+        - containerPort: 80
