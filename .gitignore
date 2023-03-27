@@ -1,0 +1,20 @@
+# .NET Core build output
+bin/
+obj/
+
+# Docker image build output
+docker-compose.override.yml
+Dockerfile*
+docker-compose*
+.dockerignore
+.vscode/
+
+# User-specific files and directories
+*.user
+*.vspscc
+*.suo
+*.nuget/
+*.dotnet/
+*.idea/
+*.vs/
+
